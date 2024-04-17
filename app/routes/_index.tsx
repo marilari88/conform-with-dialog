@@ -13,7 +13,7 @@ const teamSchema = z.object({
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { name: "description", content: "Team form" },
   ];
 };
 
@@ -33,7 +33,7 @@ export default function Index() {
   const playerList = players.getFieldList();
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
+      <h1>Save a team</h1>
       <Form {...getFormProps(form)}>
         <label htmlFor={coach.id}>coach:</label>{" "}
         <input {...getInputProps(coach, { type: "text" })} />
